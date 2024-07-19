@@ -3,10 +3,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import joblib
 
-X_train = pd.read_csv('data\processed\X_train.csv')
-X_test = pd.read_csv('data\processed\X_test.csv')
-y_train = pd.read_csv('data\processed\y_train.csv')
-y_test = pd.read_csv('data\processed\y_test.csv')
+X_train = pd.read_csv('../data/processed/X_train.csv')
+X_test = pd.read_csv('../data/processed/X_test.csv')
+y_train = pd.read_csv('../data/processed/y_train.csv')
+y_test = pd.read_csv('../data/processed/y_test.csv')
 
 # Train the logistic regression model
 lr = LogisticRegression(max_iter=10000)
